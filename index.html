@@ -161,6 +161,17 @@
             width: 100%;
             box-sizing: border-box;
         }
+        .uyari-container {
+            display: flex;
+            gap: 15px;
+            margin-top: 15px;
+        }
+        @media screen and (max-width: 480px) {
+            .uyari-container {
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
         @media screen and (min-width: 481px) {
             .devamsizlik-bilgi {
                 flex-direction: row;
@@ -210,8 +221,10 @@
                     <div id="isletmeDevamsizlik" class="devamsizlik-deger">-</div>
                 </div>
             </div>
-            <div id="devamsizlikUyari" class="uyari-mesaji"></div>
-            <div id="isletmeDevamsizlikUyari" class="uyari-mesaji"></div>
+            <div class="uyari-container">
+                <div id="devamsizlikUyari" class="uyari-mesaji"></div>
+                <div id="isletmeDevamsizlikUyari" class="uyari-mesaji"></div>
+            </div>
         </div>
     </div>
 
